@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkMoviX</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<header class="flex-box-container-center">
+    <div class="logo">
+        <img src="img/animatedLogo.gif" alt="logo">
+    </div>
+    <nav id="navigation-side">
+        <a href="#greetings">Home</a>
+        <a href="#container">Categories</a>
+        <a href="">Sign Up</a>
+        <a href="#footer">About</a>
+    </nav>
+</header>
+
+<main>
+    <section id="greetings" class="greetings">
+        <h1>Welcome to MarkMoviX!</h1>
+        <div class="paragraphs">
+            <p><span class="big-letter">D</span>iscover your favorite movies and series all in one place. Dive into captivating stories, thrilling adventures, and gripping moments, available anytime, anywhere.</p>
+            <p><span class="big-letter">I</span>mmerse yourself in the world of entertainment and enjoy a wide selection of content for all ages and tastes. With our streaming service, you'll always have access to the latest and most popular movies and series</p>
+            <p><span class="big-letter">D</span>on't miss out on the opportunity to join our community of movie enthusiasts. Sign up now and start streaming!</p>
+        </div>
+    </section>
+    <div id="container" class="container">
+        <section id="left-side">
+            <div class="filter-section">
+
+                <label for="countries">Countries: </label>
+                <select id="countries">
+                    <option value="all">All countries</option>
+                    <option value="USA">USA</option>
+                    <option value="France">France</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Italy">Italy</option>
+                </select>
+
+                <label for="genres">Genres: </label>
+                <select id="genres">
+                    <option value="all">All genres</option>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="science-fiction">Science Fiction</option>
+                    <option value="crime">Crime</option>
+                    <option value="thriller">Thriller</option>
+                </select>
+
+                <label for="years">Years: </label>
+                <select id="years">
+                    <option value="all">All years</option>
+                    <option value="1990-2000">1990-2000</option>
+                    <option value="2000-2010">2000-2010</option>
+                    <option value="2010-2020">2010-2020</option>
+                    <option value="Old">Old</option>
+                </select>
+            </div>
+            <div class="search flex-box-container-center">
+                <input type="text" placeholder="Enter a film...">
+                <button class="search-button">Find</button>
+            </div>
+            <div>
+                <a href=""></a>
+            </div>
+        </section>
+        <section id="main-content">
+    
+        </section>
+    </div>
+</main>
+
+<footer id="footer" class="flex-box-container-center">
+    <section class="flex-box-container-center" id="bottom-side">
+        <div>Name of a project</div>
+        <div>2024</div>
+        <div>Mark Taratynov</div>
+    </section>
+</footer>
+</html>

@@ -1,0 +1,240 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+/* --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: top 0.3s;
+    height: 120px;
+    background-color: #737373;
+}
+
+header #navigation-side {
+    height: 100%;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #navigation-side a {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+header .logo {
+    text-align: center;
+}
+
+header .logo img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+main .container {
+    display: flex;
+}
+
+main .greetings {
+    display: flex;
+    align-items:center;
+    height: 700px;
+}
+
+main section .paragraphs {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 600px;
+    line-height: 30px;
+}
+
+main section .paragraphs .big-letter {
+    font-size: 30px;
+    font-weight: 400;
+    color: black;
+}
+
+main section .paragraphs p {
+    margin: 10px 0 10px;
+    font-size: 18px;
+}
+
+main #left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 12px;
+    margin: 0 0 0 10px;
+    padding: 10px;
+    width: 350px;
+    height: 450px;
+    border: .5px solid black;
+    /* box-shadow: 0px 5px 5px rgba(0,0,0,0.5); */
+}
+
+main #left-side label {
+    display: inline-block;
+    width: 150px;
+    font-size: 20px;
+    margin: 20px 0 20px;
+}
+
+main #left-side select {
+    width: 200px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+}
+
+main #main-content {
+    margin: 0 50px;
+    width: 100%;
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* justify-content: center; */
+}
+
+main #main-content .movieCard {
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    margin: 10px 20px 20px 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+main #main-content .movieCard:hover {
+    /* border: .5px solid black; */
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+
+main #main-content h3 {
+    display: inline-block;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+main #main-content .coverImages {
+    width: 200px;
+    height: 300px;
+}
+
+main #left-side .search {
+    width: 100%;
+    margin: 50px 0 0 0;
+}
+
+main input {
+    width: 150px;
+    outline: none;
+    padding: 5px;
+    border-radius: 15px;
+    border: .5px solid black;
+    margin: 0 10px 0 0;
+}
+
+main button {
+    width: 70px;
+    padding: 5px;
+    border-radius: 20px;
+    border: .5px solid black;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: .4s;
+}
+
+main button:hover {
+    background-color: #333;
+    color: white;
+}
+
+footer {
+    height: 200px;
+    border: .5px solid red;
+}
+
+footer section div {
+    text-align: center;
+}
+
+.flex-box-container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
