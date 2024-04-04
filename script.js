@@ -171,6 +171,7 @@ for (let i = 0; i < catalogue.length; i++) {
     movieCard.appendChild(movieYear);
     movieCard.appendChild(movieGenre);
     movieCard.appendChild(movieDuration);
+    // movieCard.appendChild(movieDescription);
 
     //append a common container to html
     mainContent.appendChild(movieCard);
@@ -202,7 +203,7 @@ window.onscroll = () => {
         logo.style.opacity = '0';
 
     } else {
-        header.style.backgroundColor = '#737373';
+        header.style.backgroundColor = '#ff6a34ed';
 
         navLinks.forEach(link => {
             link.style.color = 'white';

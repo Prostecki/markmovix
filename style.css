@@ -62,11 +62,17 @@
 header {
     position: fixed;
     width: 100%;
+    max-width: 1200px;
     top: 0;
     left: 0;
     transition: top 0.3s;
-    height: 120px;
-    background-color: #737373;
+    height: 80px;
+    /* background-color: #737373; */
+    background-color: #ff6a34ed;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    /* background-color: rgba(255, 69, 0, 0.5); */
 }
 
 header #navigation-side {
@@ -85,6 +91,11 @@ header #navigation-side a {
     color: white;
     font-weight: 500;
     font-size: 20px;
+    transition: 0.4s;
+}
+
+header #navigation-side a:hover {
+    color: black;
 }
 
 header .logo {
@@ -92,8 +103,9 @@ header .logo {
 }
 
 header .logo img {
-    width: 120px;
-    border-radius: 50%;
+    width: 100px;
+    border-radius: 25px;
+    background-color: black;
 }
 
 main .container {
@@ -106,6 +118,11 @@ main .greetings {
     height: 700px;
 }
 
+main .greetings h1 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
 main section .paragraphs {
     display: flex;
     flex-direction: column;
@@ -115,13 +132,15 @@ main section .paragraphs {
 }
 
 main section .paragraphs .big-letter {
-    font-size: 30px;
-    font-weight: 400;
-    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FF4500;
+    
 }
 
 main section .paragraphs p {
-    margin: 10px 0 10px;
+    margin-top: 20px;
+    /* margin: 10px 0 10px; */
     font-size: 18px;
 }
 
@@ -237,4 +256,92 @@ footer section div {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        padding: 10px; 
+        height: auto; 
+        background-color: #ff6a34ed;
+        display: flex;
+        flex-direction: row;
+    }
+
+    header #navigation-side {
+        width: 100%;
+        display: flex;
+    }
+
+    header #navigation-side a {
+        display: block;
+        width: 100%; 
+        padding: 10px 0; 
+        font-size: 16px; 
+    }
+
+    header .logo img {
+        display: none;
+        /* width: 80px; */
+        /* border-radius: 20px; */
+    }
+
+    main #left-side {
+        width: 100%; 
+        margin: 20px 0; 
+    }
+
+    main #left-side label,
+    main #left-side select,
+    main .search input,
+    main button {
+        width: 100%; 
+    }
+
+    main .greetings {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    main .greetings h1 {
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    main section .paragraphs {
+        width: 100%;
+    }
+
+    main #main-content {
+        margin: 0;
+        display: block; 
+    }
+
+    main #main-content .movieCard {
+        margin-right: 0; 
+        margin-bottom: 20px;
+        width: 100%; 
+    }
+
+    main #main-content h3 {
+        text-align: left; 
+        font-size: 14px; 
+    }
+
+    main #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    main #left-side {
+        width: 90%;
+        padding: 10px;
+    }
 }
