@@ -165,6 +165,13 @@ for (let i = 0; i < catalogue.length; i++) {
     const movieDuration = document.createElement('p');
     movieDuration.textContent = "Duration: " + catalogue[i].duration;
 
+    //set an id for opening each card separately
+    movieCard.setAttribute('id', i+1);
+    movieCard.addEventListener('click', function() {
+      const id = this.getAttribute('id');
+      console.log('Clicked on card with ID: ' + id);
+    });
+
     //adress to movieCard and append elements in common container
     movieCard.appendChild(movieTitle);
     movieCard.appendChild(movieCover);
@@ -175,6 +182,8 @@ for (let i = 0; i < catalogue.length; i++) {
 
     //append a common container to html
     mainContent.appendChild(movieCard);
+
+
 }
 
 const header = document.querySelector('header');
@@ -187,30 +196,17 @@ let prevScrollpos = window.pageYOffset;
 window.onscroll = () => {
 
     let currentScrollPos = window.pageYOffset;
-
-    if (prevScrollpos != currentScrollPos) {
-
+    if (prevScrollpos < currentScrollPos) {
         header.style.transform = 'translateY(0)';
-
         header.style.backgroundColor = 'white';
-
         header.style.transition = '0.5s';
-
         navLinks.forEach(link => {
             link.style.color = 'black';
         });
-
-        logo.style.opacity = '0';
-
     } else {
         header.style.backgroundColor = '#ff6a34ed';
-
         navLinks.forEach(link => {
             link.style.color = 'white';
         });
-
-        logo.style.opacity = 1;
-
     };
 };
-
