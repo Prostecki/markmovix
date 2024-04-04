@@ -319,13 +319,15 @@ footer section div {
 
     main #main-content {
         margin: 0;
-        display: block; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     main #main-content .movieCard {
         margin-right: 0; 
         margin-bottom: 20px;
-        width: 100%; 
+        width: 80%; 
     }
 
     main #main-content h3 {
@@ -343,5 +345,17 @@ footer section div {
     main #left-side {
         width: 90%;
         padding: 10px;
+    }
+
+    main #left-side .search {
+        width: 100%;
+    }
+
+    main #left-side .search input {
+        width: 70%;
+    }
+
+    main #left-side .search button {
+        width: 30%;
     }
 }
