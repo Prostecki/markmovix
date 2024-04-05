@@ -199,12 +199,10 @@ window.onscroll = () => {
         header.style.backgroundColor = 'rgb(83, 83, 83)';
         header.style.transition = '0.5s';
         navLinks.forEach(link => {
-            link.style.color = 'black';
         });
     } else {
         header.style.backgroundColor = 'rgb(83, 83, 83)';
         navLinks.forEach(link => {
-            link.style.color = 'white';
         });
     };
 };

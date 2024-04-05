@@ -152,7 +152,7 @@ main section .paragraphs p {
 
 main section .logo-header {
     width: 600px;
-    height: 200px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -391,5 +391,11 @@ footer section div {
 
     main #left-side .search button {
         width: 30%;
+    }
+}
+
+@media (hover:none) {
+    main #main-content .movieCard:active {
+        background-color: rgba(72, 72, 72, 0.47);
     }
 }
