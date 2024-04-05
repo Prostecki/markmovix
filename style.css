@@ -59,6 +59,13 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-image: url('img/background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -66,7 +73,7 @@ header {
     left: 0;
     transition: top 0.3s;
     height: 50px;
-    background-color: #ff6a34ed;
+    background-color: rgb(83, 83, 83);
     padding: 20px 0;
     color: #fff;
     text-align: center;
@@ -116,7 +123,9 @@ main .greetings {
 }
 
 main .greetings h1 {
+    display: inline-block;
     font-size: 50px;
+    color: white;
     font-weight: 400;
 }
 
@@ -126,6 +135,7 @@ main section .paragraphs {
     text-align: start;
     width: 600px;
     line-height: 30px;
+    color: white;
 }
 
 main section .paragraphs .big-letter {
@@ -150,19 +160,21 @@ main section .logo-header {
 
 main section .logo-header img {
     width: 300px;
+    border-radius: 50%;
 }
 
 main #left-side {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: white;
     border-radius: 12px;
     margin: 0 0 0 10px;
     padding: 10px;
     width: 350px;
     height: 450px;
-    border: .5px solid black;
-    /* box-shadow: 0px 5px 5px rgba(0,0,0,0.5); */
+    background-color: rgba(72, 72, 72, 0.47);
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
 }
 
 main #left-side label {
@@ -194,19 +206,22 @@ main #main-content {
 main #main-content .movieCard {
     display: flex;
     padding: 5px;
+    background-color: rgba(72, 72, 72, 0.47);
+    border-radius: 15px;
+    color: white;
     flex-direction: column;
     width: 300px;
     height: 450px;
     margin: 10px 20px 20px 0;
     cursor: pointer;
     box-sizing: border-box;
-    transition: .3s;
+    transition: .5s;
 }
 
 main #main-content .movieCard:hover {
     /* border: .5px solid black; */
-    border-radius: 15px;
     box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    background-color: grey;
 }
 
 main #main-content h3 {
@@ -253,7 +268,7 @@ main button:hover {
 
 footer {
     height: 150px;
-    background-color: #ff6a34ed;
+    background-color: rgb(83, 83, 83);
     color: white;
 }
 
@@ -281,7 +296,6 @@ footer section div {
         max-width: 100%;
         padding: 10px; 
         height: auto; 
-        background-color: #ff6a34ed;
         display: flex;
         flex-direction: row;
     }
@@ -324,6 +338,7 @@ footer section div {
     main .greetings h1 {
         font-size: 23px;
         font-weight: bold;
+        padding: 50px;
     }
 
     main section .paragraphs {
@@ -345,7 +360,7 @@ footer section div {
     main #main-content .movieCard {
         margin-right: 0; 
         margin-bottom: 20px;
-        width: 80%; 
+        width: 60%; 
     }
 
     main #main-content h3 {

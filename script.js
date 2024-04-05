@@ -169,9 +169,8 @@ for (let i = 0; i < catalogue.length; i++) {
     movieCard.setAttribute('id', i+1);
     movieCard.addEventListener('click', function() {
       const id = this.getAttribute('id');
-      console.log('Clicked on card with ID: ' + id);
     });
-
+    
     //adress to movieCard and append elements in common container
     movieCard.appendChild(movieTitle);
     movieCard.appendChild(movieCover);
@@ -179,12 +178,11 @@ for (let i = 0; i < catalogue.length; i++) {
     movieCard.appendChild(movieGenre);
     movieCard.appendChild(movieDuration);
     // movieCard.appendChild(movieDescription);
-
     //append a common container to html
     mainContent.appendChild(movieCard);
 
-
 }
+
 
 const header = document.querySelector('header');
 const navLinks = document.querySelectorAll('a');
@@ -198,15 +196,17 @@ window.onscroll = () => {
     let currentScrollPos = window.pageYOffset;
     if (prevScrollpos < currentScrollPos) {
         header.style.transform = 'translateY(0)';
-        header.style.backgroundColor = 'white';
+        header.style.backgroundColor = 'rgb(83, 83, 83)';
         header.style.transition = '0.5s';
         navLinks.forEach(link => {
             link.style.color = 'black';
         });
     } else {
-        header.style.backgroundColor = '#ff6a34ed';
+        header.style.backgroundColor = 'rgb(83, 83, 83)';
         navLinks.forEach(link => {
             link.style.color = 'white';
         });
     };
 };
+
+
